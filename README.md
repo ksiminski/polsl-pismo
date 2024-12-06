@@ -4,7 +4,7 @@
 
 ## Instalacja
 
-1. Trzeba zaintalować fonty z folderu `.fonts`.
+1. Trzeba zaintalować fonty z folderu `pismo/.fonts`.
 1. Trzeba zainstalować system XeLaTeX.
 
 ## Użycie
