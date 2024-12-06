@@ -1,0 +1,150 @@
+\documentclass{article}
+
+\usepackage{ifxetex}
+\usepackage{url}
+
+
+
+\ifxetex
+   \usepackage{fontspec}
+   \defaultfontfeatures{Mapping=tex--text}   % to support TeX conventions like dashes etc
+   \usepackage{xltxtra} % extra customisation for XeLaTeX
+  % \setsansfont{Barlow SCK Regular}
+   \setsansfont{Barlow Semi Condensed}
+   \setmainfont{PT Serif}
+\else
+   \usepackage[T1]{fontenc}
+   \usepackage[utf8]{inputenc}
+   \usepackage[osf,tt=false]{libertine}
+\fi
+
+ 
+\usepackage[polish]{babel} 
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{indentfirst}
+\usepackage{xcolor}
+
+\definecolor{polsl-niebieski}{rgb}{0.18039, 0.30980 , 0.61961}
+\definecolor{polsl-zolty}    {rgb}{1.00000, 0.84314 , 0.00000}
+
+\newcommand{\graf}{./graf}
+
+\frenchspacing
+
+
+\usepackage[
+   a4paper,
+   left=4cm,
+   right=2cm,
+   top=5cm,
+   bottom=3cm,
+   headheight=5cm,
+   includefoot]{geometry}
+
+\usepackage{fancyhdr}
+
+\fancypagestyle{firstpage}
+{%
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\lhead{\includegraphics[width=2cm]{\graf/politechnika_sl_logo_pion_pl}
+       \includegraphics[width=1.4cm]{\graf/uczelnia-badawcza-kolor-pion.pdf}}
+
+\rhead{\begin{minipage}[b]{0.5\textwidth}
+\color{polsl-niebieski}
+\begin{flushright}
+\sffamily
+{\small\textbf{Wydział XYZ}}
+\\
+{\small Katedra ABC (RABC0)}\\
+\vspace{2mm}
+dr inż.\\
+\textbf{Imię Nazwisko}\\
+funkcja\\
+\vspace{2mm}
+\end{flushright}
+\end{minipage}}
+
+\lfoot{%
+\begin{minipage}{0.5\textwidth}\color{polsl-niebieski} 
+\small\sffamily\textbf{Politechnika Śląska}\\
+\footnotesize
+{\bfseries Wydział XYZ}\\
+Katedra ABC (RABC0)\\
+dr inż. Imię Nazwisko\\
+ul. Akademicka XX, pok. YY, 44-100 Gliwice\\
+imie.nazwisko@polsl.pl
+\end{minipage}
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=2cm,yshift=3.0cm,font=\bfseries] (number) at (current page.south west) {\includegraphics[scale=0.2]{\graf/hr-kol.jpg}};
+\end{tikzpicture}
+}
+
+\rfoot{\begin{tikzpicture}[remember picture,overlay]
+          \node[xshift=-1cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {\thepage};
+      \end{tikzpicture}}
+
+}
+
+\fancypagestyle{nextpages}
+{%
+
+\fancyhf{}
+\lhead{\includegraphics[width=1.7cm]{\graf/politechnika_sl_logo_pion_pl}
+       \includegraphics[width=1.1cm]{\graf/uczelnia-badawcza-kolor-pion.pdf}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\rfoot{\begin{tikzpicture}[remember picture,overlay]
+          \node[xshift=-1cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {\thepage};
+      \end{tikzpicture}}
+
+}
+
+\pagestyle{nextpages} 
+% \linespread{1.5}
+\begin{document}
+
+ 
+\thispagestyle{firstpage}
+
+\rule{0cm}{1.5cm}
+
+\noindent{%\small  znak: Rau5/ks/2019/343
+\hfill Gliwice, \today}
+
+%\rule{0cm}{0.75cm}
+\rule{0cm}{1.5cm}
+ 
+\rule{0.45\textwidth}{0cm}
+\begin{minipage}{0.5\textwidth}
+\large
+Szanowny Pan\\
+prof. Ambroży Kleks\\
+Akademia Pana Kleksa
+\end{minipage} 
+
+%\rule{0cm}{4cm}
+\vfill 
+
+%\small 
+% 
+
+
+Dziś oczy i~myśl wszystkich pociąga do~siebie
+nowy gość dostrzeżony niedawno na~niebie:
+był to kometa pierwszej wielkości i~mocy.
+Zjawił się na~zachodzie, leciał ku północy;
+krwawym okiem z~ukosa na~ryd\-wan spoziera,
+jakby chciał zająć puste miejsce Lucypera,
+warkocz długi w~tył rzucił i~część nieba trzecią
+obwinął nim, gwiazd krocie zagarnął jak siecią
+i ciągnie je za sobą, a~sam wyżej głową
+mierzy, na~północ, prosto w~gwiazdę biegunową.
+
+\vfill 
+\vfill
+\end{document}
