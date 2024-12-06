@@ -1,7 +1,7 @@
 # Pismo firmowe Politechniki Śląskiej w XeLaTeXu
 
 <!--![Politechnika Śląska](pismo/graf/politechnika_sl_logo_poziom_pl_rgb.png)-->
-![Politechnika Śląska](Logo_80lat_poziom_pl_kolor_rgb.png)
+![Politechnika Śląska](pismo/graf/Logo_80lat_poziom_pl_kolor_rgb.png)
 
 Wzorzec pisma jest zgodny z [Systemem indentyfikacji wizualnej Politechniki Śląskiej](https://www.polsl.pl/siwps).
 
