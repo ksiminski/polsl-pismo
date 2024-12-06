@@ -84,8 +84,10 @@ imie.nazwisko@polsl.pl
 }
 
 \rfoot{\begin{tikzpicture}[remember picture,overlay]
-          \node[xshift=-1cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {\thepage};
-      \end{tikzpicture}}
+\node[xshift=-3cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {
+{\includegraphics[scale=0.4]{\graf/Logo_80lat_pion_pl_kolor_rgb.pdf}}
+};
+\end{tikzpicture}}
 
 }
 
@@ -99,7 +101,7 @@ imie.nazwisko@polsl.pl
 \renewcommand{\footrulewidth}{0pt}
 
 \rfoot{\begin{tikzpicture}[remember picture,overlay]
-          \node[xshift=-1cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {\thepage};
+\node[xshift=-1cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {\thepage};
       \end{tikzpicture}}
 
 }
