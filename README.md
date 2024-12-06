@@ -2,7 +2,7 @@
 
 ![Politechnika Śląska](pismo/graf/politechnika_sl_logo_poziom_pl_rgb.png)
 
-Wzorzec pisma jest zgodny z [Systemem indentyfikacji wizualnej Politechniki Śląskiej](https://www.polsl.pl/siwps)
+Wzorzec pisma jest zgodny z [Systemem indentyfikacji wizualnej Politechniki Śląskiej](https://www.polsl.pl/siwps).
 
 ## Instalacja
 
