@@ -37,8 +37,9 @@
    a4paper,
    left=4cm,
    right=2cm,
-   top=5cm,
-   bottom=3cm,
+   top=6cm,
+   bottom=4cm,
+   footskip=1cm,
    headheight=5cm,
    includefoot]{geometry}
 
@@ -53,8 +54,8 @@
 \lhead{\includegraphics[width=2cm]{\graf/politechnika_sl_logo_bw_pion_pl}
        \includegraphics[width=1.4cm]{\graf/uczelnia-badawcza-cz-b-pion.pdf}}
 
-\rhead{\begin{minipage}[b]{0.5\textwidth}
-%\color{polsl-niebieski}
+\rhead{\begin{minipage}[m]{0.5\textwidth}
+\color{polsl-niebieski}
 \begin{flushright}
 \sffamily
 {\small\textbf{Wydział XYZ}}
@@ -69,6 +70,8 @@ funkcja\\
 \end{minipage}}
 
 \lfoot{%
+\rule{0cm}{5mm}
+
 \begin{minipage}{0.5\textwidth}%\color{polsl-niebieski} 
 \small\sffamily\textbf{Politechnika Śląska}\\
 \footnotesize
@@ -83,16 +86,16 @@ imie.nazwisko@polsl.pl
 \end{tikzpicture}
 }
 
+\rfoot{
+\rule{0cm}{5mm}
 
-\rfoot{\begin{tikzpicture}[remember picture,overlay]
+\begin{tikzpicture}[remember picture,overlay]
 \node[xshift=-3cm,yshift=3.5cm,font=\bfseries] (number) at (current page.south east) {
 {\includegraphics[scale=0.4]{\graf/Logo_80lat_pion_pl_czarne_rgb.pdf}}
 };
 \end{tikzpicture}}
 
 }
-
-
 
 \fancypagestyle{nextpages}
 {%
@@ -118,7 +121,7 @@ imie.nazwisko@polsl.pl
 
 \rule{0cm}{1.5cm}
 
-\noindent{%\small  znak:  
+\noindent{%\small  znak: 
 \hfill Gliwice, \today}
 
 %\rule{0cm}{0.75cm}
